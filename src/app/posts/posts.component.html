@@ -1,0 +1,4 @@
+<div *ngFor="let post of posts.$toArray">
+    id: {{ post.id }}
+    <div>title: {{ post.attributes.title }} <span *ngIf="post.attributes.published">(Published)</span></div>
+</div>
